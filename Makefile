@@ -1,4 +1,4 @@
-.PHONY: docs-build docs-serve docs-up docs-down docs-clean
+.PHONY: docs-build docs-serve docs-up docs-down docs-clean test-logs-clean
 
 DOCS_DIR := $(abspath $(dir $(lastword $(MAKEFILE_LIST))))/docs
 
@@ -16,3 +16,7 @@ docs-down:
 
 docs-clean:
 	$(DOCS_DIR)/clean.sh
+
+test-logs-clean:
+	rm -rf test-artifacts runs coverage htmlcov .pytest_cache .coverage
+	rm -f coverage.out coverage.txt coverage.xml
