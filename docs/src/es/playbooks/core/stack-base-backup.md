@@ -1,13 +1,12 @@
 <!-- generated: playbooks-export-mkdocs -->
 # Stack Base Backup
 
-Capture a backup while enabling stack-aware addon hooks through `PRODUCTIVE_K3S_STACK_NAME=base`.
+Capture a backup while loading stack-aware add-on hooks from the exact packaged artifact.
 
 ## Comando directo del repositorio
 
 ```bash
-cd productive-k3s-core
-PRODUCTIVE_K3S_STACK_NAME=base ./productive-k3s-core.sh backup '/tmp/pk3s-base-stack-backup'
+bash ./productive-k3s-core.sh stack backup --tgz /tmp/base-0.1.0.tgz /tmp/pk3s-base-stack-backup
 ```
 
 ## Vista del cast
@@ -26,8 +25,9 @@ PRODUCTIVE_K3S_STACK_NAME=base ./productive-k3s-core.sh backup '/tmp/pk3s-base-s
 
 ## Detalle del escenario
 
-Capture a backup while enabling stack-aware addon hooks through `PRODUCTIVE_K3S_STACK_NAME=base`.
+Capture a backup while loading stack-aware add-on hooks from the exact packaged artifact.
 
 ```bash
 PRODUCTIVE_K3S_CORE_PLAYBOOK_BACKUP_DIR=/tmp/pk3s-base-stack-backup \
+PRODUCTIVE_K3S_CORE_PLAYBOOK_STACK_TGZ=/tmp/base-0.1.0.tgz \
 ```

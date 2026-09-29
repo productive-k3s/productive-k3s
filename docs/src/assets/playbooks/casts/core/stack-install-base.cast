@@ -1,5 +1,5 @@
 {"version": 2, "width": 80, "height": 24, "timestamp": 1787593841, "env": {"SHELL": "/bin/bash", "TERM": null}, "title": "core playbook: stack install base"}
-[0.0, "o", "$ ./productive-k3s-core.sh stack install base\r\n"]
+[0.0, "o", "$ ./productive-k3s-core.sh stack install --tgz /tmp/base-0.1.0.tgz\r\n"]
 [0.12, "o", "[INFO] Detected host platform: Ubuntu 24.04.4 LTS\r\n"]
 [0.24, "o", "[INFO] Incremental apply: k3s + Rancher + Longhorn + Registry (Ubuntu 24.04.4 LTS)\r\n"]
 [0.36, "o", "[INFO] Mode: stack (cluster stack installation)\r\n"]

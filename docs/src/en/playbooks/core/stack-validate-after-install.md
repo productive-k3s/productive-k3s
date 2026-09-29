@@ -1,13 +1,13 @@
 <!-- generated: playbooks-export-mkdocs -->
 # Stack Validate After Install
 
-Re-run stack-aware validation after `stack install base`.
+Re-run stack-aware validation after installing the packaged base stack.
 
 ## Repository-local command
 
 ```bash
 cd productive-k3s-core
-bash ./productive-k3s-core.sh stack validate base --strict
+bash ./productive-k3s-core.sh stack validate --tgz /tmp/base-0.1.0.tgz --strict
 ```
 
 ## Cast preview
@@ -26,4 +26,8 @@ bash ./productive-k3s-core.sh stack validate base --strict
 
 ## Scenario details
 
-Re-run stack-aware validation after `stack install base`.
+Re-run stack-aware validation after installing the packaged base stack.
+
+```bash
+PRODUCTIVE_K3S_CORE_PLAYBOOK_STACK_TGZ=/tmp/base-0.1.0.tgz \
+```

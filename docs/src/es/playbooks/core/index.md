@@ -115,23 +115,22 @@ make -C ./tests test-rke2-full</code></pre></div>
 <article class="pk3s-playbook-card">
   <div class="pk3s-playbook-card__eyebrow">CORE</div>
   <h3><a href="./stack-base-backup/">Stack Base Backup</a></h3>
-  <p>Capture a backup while enabling stack-aware addon hooks through `PRODUCTIVE_K3S_STACK_NAME=base`.</p>
-  <div class="pk3s-playbook-inline-command"><pre><code>cd productive-k3s-core
-PRODUCTIVE_K3S_STACK_NAME=base ./productive-k3s-core.sh backup '/tmp/pk3s-base-stack-backup'</code></pre></div>
+  <p>Capture a backup while loading stack-aware add-on hooks from the exact packaged artifact.</p>
+  <div class="pk3s-playbook-inline-command"><pre><code>bash ./productive-k3s-core.sh stack backup --tgz /tmp/base-0.1.0.tgz /tmp/pk3s-base-stack-backup</code></pre></div>
 </article>
 
 <article class="pk3s-playbook-card">
   <div class="pk3s-playbook-card__eyebrow">CORE</div>
   <h3><a href="./stack-base-cleanup-apply/">Stack Base Cleanup Apply</a></h3>
   <p>Apply the destructive cleanup path for `base`.</p>
-  <div class="pk3s-playbook-inline-command"><pre><code>bash ./productive-k3s-core.sh stack cleanup base --apply --yes --confirm-clean</code></pre></div>
+  <div class="pk3s-playbook-inline-command"><pre><code>bash ./productive-k3s-core.sh stack cleanup --tgz /tmp/base-0.1.0.tgz --apply --yes --confirm-clean</code></pre></div>
 </article>
 
 <article class="pk3s-playbook-card">
   <div class="pk3s-playbook-card__eyebrow">CORE</div>
   <h3><a href="./stack-base-cleanup-plan/">Stack Base Cleanup Plan</a></h3>
   <p>Review the destructive cleanup scope for `base` without applying it.</p>
-  <div class="pk3s-playbook-inline-command"><pre><code>bash ./productive-k3s-core.sh stack cleanup base --plan</code></pre></div>
+  <div class="pk3s-playbook-inline-command"><pre><code>bash ./productive-k3s-core.sh stack cleanup --tgz /tmp/base-0.1.0.tgz --plan</code></pre></div>
 </article>
 
 <article class="pk3s-playbook-card">
@@ -169,7 +168,7 @@ bash ./productive-k3s-core.sh stack export --tgz /tmp/base-stack.tgz --output /t
   <h3><a href="./stack-install-base/">Stack Install Base</a></h3>
   <p>Install the default `base` stack on top of a cluster already created with `apply --mode server`.</p>
   <div class="pk3s-playbook-inline-command"><pre><code>cd productive-k3s-core
-bash ./productive-k3s-core.sh stack install base</code></pre></div>
+bash ./productive-k3s-core.sh stack install --tgz /tmp/base-0.1.0.tgz</code></pre></div>
 </article>
 
 <article class="pk3s-playbook-card">
@@ -182,9 +181,9 @@ bash ./productive-k3s-core.sh stack install base</code></pre></div>
 <article class="pk3s-playbook-card">
   <div class="pk3s-playbook-card__eyebrow">CORE</div>
   <h3><a href="./stack-validate-after-install/">Stack Validate After Install</a></h3>
-  <p>Re-run stack-aware validation after `stack install base`.</p>
+  <p>Re-run stack-aware validation after installing the packaged base stack.</p>
   <div class="pk3s-playbook-inline-command"><pre><code>cd productive-k3s-core
-bash ./productive-k3s-core.sh stack validate base --strict</code></pre></div>
+bash ./productive-k3s-core.sh stack validate --tgz /tmp/base-0.1.0.tgz --strict</code></pre></div>
 </article>
 
 <article class="pk3s-playbook-card">
@@ -192,7 +191,7 @@ bash ./productive-k3s-core.sh stack validate base --strict</code></pre></div>
   <h3><a href="./stack-validate-base/">Stack Validate Base</a></h3>
   <p>Validate the explicit `base` stack before or after installation.</p>
   <div class="pk3s-playbook-inline-command"><pre><code>cd productive-k3s-core
-bash ./productive-k3s-core.sh stack validate base --strict</code></pre></div>
+bash ./productive-k3s-core.sh stack validate --tgz /tmp/base-0.1.0.tgz --strict</code></pre></div>
 </article>
 
 <article class="pk3s-playbook-card">

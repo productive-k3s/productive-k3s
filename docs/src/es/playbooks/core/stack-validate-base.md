@@ -7,7 +7,7 @@ Validate the explicit `base` stack before or after installation.
 
 ```bash
 cd productive-k3s-core
-bash ./productive-k3s-core.sh stack validate base --strict
+bash ./productive-k3s-core.sh stack validate --tgz /tmp/base-0.1.0.tgz --strict
 ```
 
 ## Vista del cast
@@ -27,3 +27,7 @@ bash ./productive-k3s-core.sh stack validate base --strict
 ## Detalle del escenario
 
 Validate the explicit `base` stack before or after installation.
+
+```bash
+PRODUCTIVE_K3S_CORE_PLAYBOOK_STACK_TGZ=/tmp/base-0.1.0.tgz \
+```

@@ -1,5 +1,5 @@
 {"version": 2, "width": 80, "height": 24, "timestamp": 1787615119, "env": {"SHELL": "/bin/bash", "TERM": null}, "title": "core playbook: stack validate base"}
-[0.0, "o", "$ ./productive-k3s-core.sh stack validate base --strict\r\n"]
+[0.0, "o", "$ ./productive-k3s-core.sh stack validate --tgz /tmp/base-0.1.0.tgz --strict\r\n"]
 [0.084, "o", "\u001b[1;34m[INFO]\u001b[0m Checking required commands\r\n"]
 [0.085, "o", "\u001b[1;32m[OK]\u001b[0m required commands are available\r\n"]
 [0.087, "o", "\u001b[1;34m[INFO]\u001b[0m Checking k3s service"]

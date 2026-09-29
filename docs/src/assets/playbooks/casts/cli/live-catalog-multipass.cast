@@ -462,7 +462,7 @@
 [61.92, "o", "[2026-09-01 16:34:05-0300] [STAGE:live-catalog] [INFO] Agent bootstrap completed\r\n"]
 [62.04, "o", "[2026-09-01 16:34:05-0300] [STAGE:live-catalog] [INFO] Host aliases synchronized across all VMs\r\n"]
 [62.16, "o", "[2026-09-01 16:34:05-0300] [STAGE:live-catalog]\r\n"]
-[62.28, "o", "[2026-09-01 16:34:05-0300] [STAGE:live-catalog] [ERROR] Stack source 'base' was not found. Set PRODUCTIVE_K3S_ADDONS_REPO_DIR or place productive-k3s-addons beside productive-k3s-core.\r\n"]
+[62.28, "o", "[2026-09-01 16:34:05-0300] [STAGE:live-catalog] [ERROR] Legacy source-based stack invocation failed. The current CLI contract resolves the catalog entry and passes an exact TGZ to Core.\r\n"]
 [62.4, "o", "[2026-09-01 16:34:05-0300] [STAGE:live-catalog] make[2]: *** [Makefile:34: cluster-up] Error 1\r\n"]
 [62.52, "o", "[2026-09-01 16:34:05-0300] [STAGE:live-catalog] make[2]: Leaving directory '/tmp/tmp.AQZOYDBiyW/scenarios/local/multipass'\r\n"]
 [62.64, "o", "[2026-09-01 16:34:05-0300] [STAGE:live-catalog] [pk3s-infra] INFO  Persisted profile state: /home/jmacchi/.cache/pk3s/profiles/multipass-1-server-2-agents.json\r\n"]

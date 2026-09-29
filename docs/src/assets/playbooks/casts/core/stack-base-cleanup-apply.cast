@@ -1,5 +1,5 @@
 {"version": 2, "width": 80, "height": 24, "timestamp": 1787615201, "env": {"SHELL": "/bin/bash", "TERM": null}, "title": "core playbook: stack base cleanup apply"}
-[0.0, "o", "$ ./productive-k3s-core.sh stack cleanup base --apply --yes --confirm-clean\r\n"]
+[0.0, "o", "$ ./productive-k3s-core.sh stack cleanup --tgz /tmp/base-0.1.0.tgz --apply --yes --confirm-clean\r\n"]
 [0.023, "o", "[ERROR] DESTRUCTIVE CLEANUP\r\n"]
 [0.023, "o", "  This script is intended to remove the local productive-k3s-core stack completely.\r\n"]
 [0.024, "o", "  It can uninstall k3s and delete cluster namespaces and local host integrations.\r\n"]

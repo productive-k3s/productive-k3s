@@ -7,7 +7,7 @@ Install the default `base` stack on top of a cluster already created with `apply
 
 ```bash
 cd productive-k3s-core
-bash ./productive-k3s-core.sh stack install base
+bash ./productive-k3s-core.sh stack install --tgz /tmp/base-0.1.0.tgz
 ```
 
 ## Cast preview
@@ -27,3 +27,7 @@ bash ./productive-k3s-core.sh stack install base
 ## Scenario details
 
 Install the default `base` stack on top of a cluster already created with `apply --mode server`.
+
+```bash
+PRODUCTIVE_K3S_CORE_PLAYBOOK_STACK_TGZ=/tmp/base-0.1.0.tgz \
+```

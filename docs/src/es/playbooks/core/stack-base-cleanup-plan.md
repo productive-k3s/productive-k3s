@@ -6,7 +6,7 @@ Review the destructive cleanup scope for `base` without applying it.
 ## Comando directo del repositorio
 
 ```bash
-bash ./productive-k3s-core.sh stack cleanup base --plan
+bash ./productive-k3s-core.sh stack cleanup --tgz /tmp/base-0.1.0.tgz --plan
 ```
 
 ## Vista del cast
@@ -26,3 +26,7 @@ bash ./productive-k3s-core.sh stack cleanup base --plan
 ## Detalle del escenario
 
 Review the destructive cleanup scope for `base` without applying it.
+
+```bash
+PRODUCTIVE_K3S_CORE_PLAYBOOK_STACK_TGZ=/tmp/base-0.1.0.tgz \
+```
